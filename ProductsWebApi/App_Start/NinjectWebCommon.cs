@@ -11,6 +11,10 @@ namespace ProductsWebApi.App_Start
     using Ninject;
     using Ninject.Web.Common;
 
+    using System.Data.Entity;
+    using Domain.DataBaseContextAndEntitiesDb;
+    using Domain.Repository;
+
     public static class NinjectWebCommon 
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
@@ -61,6 +65,8 @@ namespace ProductsWebApi.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind<DbContext>().To<EFProductDbContext>().InRequestScope();
+            kernel.Bind(typeof(IRepository<>)).To(typeof(MSSQLEFRepository<>));
         }        
     }
 }

@@ -7,7 +7,7 @@ using System.Data.Entity;
 
 namespace Domain.Repository
 {
-    class MSSQLEFRepository<TEntity> : IRepository<TEntity> where TEntity : class
+    public class MSSQLEFRepository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         DbContext context;
         DbSet<TEntity> dbSet;
