@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Abstract.Calculator
+namespace Domain.Calculator.Abstract
 {
     public interface IDiscount
     {

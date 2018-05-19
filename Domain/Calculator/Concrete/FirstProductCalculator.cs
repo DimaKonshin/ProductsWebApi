@@ -1,4 +1,4 @@
-﻿using Domain.Abstract.Calculator;
+﻿using Domain.Calculator.Abstract;
 using Domain.DataBaseContextAndEntitiesDb;
 using System;
 using System.Collections.Generic;
