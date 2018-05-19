@@ -12,5 +12,7 @@ namespace Domain.Repository
         IQueryable<TEntity> Read();
         void Update(TEntity item);
         void Delete(TEntity item);
+
+        TEntity FindById(int id);
     }
 }

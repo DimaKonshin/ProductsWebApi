@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using Domain.DataBaseContextAndEntitiesDb;
 
 namespace Domain.Repository
 {
@@ -41,6 +42,11 @@ namespace Domain.Repository
             context.SaveChanges();
         }
 
+        public TEntity FindById(int id)
+        {
+            return dbSet.Find(id);
+        }
+
         private bool disposed = false;
 
         public virtual void Dispose(bool disposing)
@@ -60,5 +66,7 @@ namespace Domain.Repository
             Dispose(true);
             GC.SuppressFinalize(this);
         }
+
+        
     }
 }
