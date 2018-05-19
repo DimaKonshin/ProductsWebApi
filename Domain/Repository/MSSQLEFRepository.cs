@@ -42,7 +42,7 @@ namespace Domain.Repository
             context.SaveChanges();
         }
 
-        public TEntity FindById(int id)
+        public TEntity FindById(int? id)
         {
             return dbSet.Find(id);
         }

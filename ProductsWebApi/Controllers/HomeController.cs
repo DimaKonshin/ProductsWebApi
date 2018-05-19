@@ -48,7 +48,8 @@ namespace ProductsWebApi.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Product product = repository.Read().Where(x => x.Id == id).FirstOrDefault();
+
+            Product product = repository.FindById(id);
             if (product == null)
             {
                 return HttpNotFound();
@@ -74,7 +75,7 @@ namespace ProductsWebApi.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Product product = repository.Read().Where(x => x.Id == id).FirstOrDefault();
+            Product product = repository.FindById(id);
             if (product == null)
             {
                 return HttpNotFound();
@@ -86,7 +87,7 @@ namespace ProductsWebApi.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Product product = repository.Read().Where(x => x.Id == id).FirstOrDefault();
+            Product product = repository.FindById(id);
             repository.Delete(product);
             return RedirectToAction("Read");
         }

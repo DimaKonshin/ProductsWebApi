@@ -13,6 +13,6 @@ namespace Domain.Repository
         void Update(TEntity item);
         void Delete(TEntity item);
 
-        TEntity FindById(int id);
+        TEntity FindById(int? id);
     }
 }
