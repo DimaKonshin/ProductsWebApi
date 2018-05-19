@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="Calculator\Abstract\IDiscount.cs" />
     <Compile Include="Calculator\Abstract\IProductCalculator.cs" />
+    <Compile Include="Calculator\Concrete\FirstDiscount.cs" />
+    <Compile Include="Calculator\Concrete\FirstProductCalculator.cs" />
     <Compile Include="DataBaseContextAndEntitiesDb\EFProductDbContext.cs" />
     <Compile Include="DataBaseContextAndEntitiesDb\Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -61,8 +63,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Calculator\Concrete\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
