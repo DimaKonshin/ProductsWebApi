@@ -54,7 +54,7 @@
     <Compile Include="Calculator\Concrete\FirstDiscount.cs" />
     <Compile Include="Calculator\Concrete\FirstProductCalculator.cs" />
     <Compile Include="DataBaseContextAndEntitiesDb\EFProductDbContext.cs" />
-    <Compile Include="DataBaseContextAndEntitiesDb\Products.cs" />
+    <Compile Include="DataBaseContextAndEntitiesDb\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\MSSQLEFRepository.cs" />

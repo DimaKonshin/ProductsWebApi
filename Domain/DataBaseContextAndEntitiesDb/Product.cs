@@ -6,7 +6,7 @@ namespace Domain.DataBaseContextAndEntitiesDb
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Products
+    public partial class Product
     {
         public int Id { get; set; }
 

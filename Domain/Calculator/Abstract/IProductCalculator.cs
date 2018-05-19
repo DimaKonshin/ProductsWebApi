@@ -9,7 +9,7 @@ namespace Domain.Calculator.Abstract
 {
     public interface IProductCalculator
     {
-        decimal TotalSum(List<Products> list);
+        decimal TotalSum(List<Product> list);
         decimal TotalSumWithDiscount(decimal sum);
     }
 }

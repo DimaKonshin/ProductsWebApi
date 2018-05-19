@@ -17,7 +17,7 @@ namespace Domain.Calculator.Concrete
             this.discount = discount;
         }
 
-        public decimal TotalSum(List<Products> list)
+        public decimal TotalSum(List<Product> list)
         {
             return list.Sum(x => x.Price * x.Quantity);
         }
