@@ -11,7 +11,7 @@ namespace Domain.Basket
 {
     public class BasketOfProducts
     {
-        ListOfProducts listOfProducts = new ListOfProducts();
+        public ListOfProducts listOfProducts = new ListOfProducts();
 
         IProductCalculator calculator; 
 
